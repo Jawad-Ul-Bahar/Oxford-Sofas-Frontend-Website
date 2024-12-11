@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/WhatsApp Image 2024-06-25 at 3.05.35 PM.jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Oxford Sofa</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        /* Start Header */
+        .navbar-brand {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        }
+        .me-2 {
+        border-radius: 20px;
+        border: 1px solid rgb(48, 48, 48);
+        width: 250px;
+        }
+        .navbar-brand img {
+        height: 50px;
+        width: 100px;
+        opacity: 0.7;
+        }
+
+        .navbar {
+        font-size: 15px;
+        position: fixed;
+        top: 0%;
+        z-index: 1;
+        width: 100%;
+        opacity: 0.8;
+        }
+        .btn {
+        border-radius: 20px;
+        margin-left: 0%;
+        }
+        @media (max-width: 992px) {
+        .navbar-brand {
+        position: static;
+        transform: none;
+        margin: auto;
+        }
+        }
+        
+        body, html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        /* overflow: hidden; */
+        }
+        .dd-flex{
+            border-bottom: 1px solid gray;
+            height: 40px;
+        }
+        .dd-flex:hover{
+          border: 2px solid gray;
+          border-radius: 30px;
+          transition: 1s;
+        }
+          /* End Header */
+
+          /* Start Content */
+        .content {
+        position: absolute;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: bold;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: rgb(0, 0, 0);
+        z-index: 1;
+        padding: 20px;
+        border-radius: 10px;
+        opacity: 0.7;
+        }
+
+        .class{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+            margin-top: 25px;
+        }
+        .imag{
+            width: 80%;
+            height: 400px;
+            margin-left: 10%;
+        }
+        .card{
+            text-align: center;
+            margin-top: 100px;
+        }
+        .checked{
+        color: orange;
+        }
+        .drac{
+            margin-top: 20px;
+        }
+        .square{
+            z-index: 1;
+            position: fixed;
+            top: 85%;
+            left: 3%;
+        }
+        .bttn{
+            /* margin-right: 70%; */
+            border: none;
+            border-radius: 30px;
+            background-color: lightslategrey;
+            color: white;
+            width: 100%;
+            height: 20%;
+            font-weight: bold;
+        }
+        .bttn:hover{
+            background-color: rgb(177, 204, 218);
+            transition: 0.5s;
+        }
+        .sofac{
+            height: 500px;
+        }
+        .bttnn{
+            width: 120px;
+            height: 30px;
+            float: right;
+            border: none;
+            border-radius: 30px;
+            background-color: lightslategrey;
+            color: white;
+            font-weight: bold;
+        }
+        .bttnn:hover{
+            background-color: rgb(177, 204, 218);
+            transition: 0.5s;
+        }
+        .share{
+            float: right;
+            margin-right: 2%;
+        }
+        .jawa{
+            float: right;
+        }
+        .small{
+            font-size: small;
+        }
+
+        .pic1{
+            width: 100%;
+            height: 500px;
+        }
+        .aboutus{
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        h3{
+            text-align: center;
+            margin-top: 30px
+        }
+        .sofa1{
+            margin-left: 60%;
+            margin-top: -400px;
+        }
+        .row{
+            margin-top: -100px;
+        }
+
+        .title{
+            text-align: center;
+        }
+        .pic2{
+            margin-left: 60px;
+        }
+        .pic3{
+        height: 300px;
+        width: 400px;
+        margin-left: 60px;
+        }
+        .city{
+            display: flex;
+            margin-left: 1px;
+            justify-content: space-evenly;
+        }
+        pre{
+            display: flex;
+        }
+        .pno{
+            display: flex;
+            justify-content: space-between  ;
+            margin-left: 20px;
+        }
+        .cred{
+            height: 100px;
+        }
+
+        .p{
+            text-align: center;
+        }
+        .card-img{
+            margin-top: 400px;
+        }
+        .card-img-overlay{
+            margin-top: -100px;
+        }
+         /* End Content */
+
+         /* Start Footer */
+        .footer {
+        background-color: #343a40;
+        color: white;
+        padding: 40px 0;
+        width: 100%;
+        padding-bottom: 10px;
+
+        }
+        .footer a {
+        color: #adb5bd;
+        text-decoration: none;
+        }
+        .footer a:hover {
+        color: white;
+        text-decoration: none;
+        }
+        .footer .social-icons a {
+        margin: 10px;
+        margin-bottom: -5px;
+        }
+        .f-h{
+        margin-top: -3%;
+        }
+        .copy{
+        margin-top: 50px;
+        }
+        .footer-bottom {
+        background-color: #212529;
+        color: #adb5bd;
+        padding-bottom: 0px 0;
+        margin-top: 70px;
+        height: 29px;
+        }
+        .footer-bottom .social-icons a {
+        margin-left: 10px;
+        color: #adb5bd;
+        text-decoration: none;
+        }
+        .footer-bottom .social-icons a:hover {
+        color: white;
+        }
+        .bont{
+        width: 50%;
+        background-color: green;
+        border: none;
+        border-radius: 30px;
+        }
+        .bont:hover{
+        background-color: rgb(54, 227, 54);
+        transition: 0.7s;
+        }
+        /* End Footer */
+    </style>
+</head>
+<body><i>
+      <!-- Start Header -->
+    <nav class="navbar navbar-expand-lg bg-secondary-subtle text-black">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="miniproject.html"><b><i>O<sup>xford</sup> S<sub>ofa</sub></i></b></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                       
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-user-circle-o" style="font-size:25px; color:gray;"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="LoginPage.html"><b>Login / Register</b></a></li>
+                            </ul>
+
+                        </li>
+                        <a class="nav-link active" aria-current="page" href="miniproject.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+
+                              <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#jawad"><b>Best Categories</b></a></li><hr>
+            <li><a class="dropdown-item" href="#jawad1"><b>Best Deals</b></a></li><hr>
+            <li><a class="dropdown-item" href="#jawad2"><b>Best Sales</b></a></li><hr>
+            <li><a class="dropdown-item" href="#jawad3"><b>Our Collection</b></a></li><hr>
+            <li><a class="dropdown-item" href="#jawad4"><b>Premium Sofas</b></a></li>
+          </ul> -->
+
+          
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle btn-primary" href="cart.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-cart-arrow-down" style="font-size:25px; color:gray;"></i></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="cart.html"><b>Add To Cart</b></a></li>
+          </ul>
+        </li>
+          </ul>
+        </li>
+          </ul>
+                <form class="d-flex dd-flex" role="search">
+                    <input class="form-control me-2 bg-transparent border-0" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn border-0" type="submit"><i class="fa fa-search" style="font-size:25px; margin-top: -1px; float: right;"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- End Header -->
+
+    <!-- Start Content -->
+    <!-- <div class="card">
+        <img src="premium1.avif" class="card-img" alt="...">
+        <div class="card-img-overlay"></div>
+    </div>     -->
+
+    <div class="aboutus">
+        <h1>About Us</h1>
+        <p>Oxford Sofa has provided a variety of high-quality furniture products, and is today recognized as Pakistan’s leading and most trusted furniture brand. Oxford Sofa has established itself as Pakistan's leading and most trusted furniture brand. Renowned for its high-quality products, it has become a household name. The brand offers a diverse range of premium furniture items. Its commitment to excellence has garnered widespread recognition. Today, Oxford Sofa continues to set the standard in the furniture industry in Pakistan.Oxford Sofa has provided a variety of high-quality furniture products, and is today recognized as Pakistan’s leading and most trusted furniture brand. Oxford Sofa has established itself as Pakistan's leading and most trusted furniture brand. Renowned for its high-quality products, it has become a household name. The brand offers a diverse range of premium furniture items. Its commitment to excellence has garnered widespread recognition. Today, Oxford Sofa continues to set the standard in the furniture industry in Pakistan.Oxford Sofa has provided a variety of high-quality furniture products, and is today recognized as Pakistan’s leading and most trusted furniture brand. Oxford Sofa has established itself as Pakistan's leading and most trusted furniture brand. Renowned for its high-quality products, it has become a household name. The brand offers a diverse range of premium furniture items. Its commitment to excellence has garnered widespread recognition. Today, Oxford Sofa continues to set the standard in the furniture industry in Pakistan.Oxford Sofa has provided a variety of high-quality furniture products, and is today recognized as Pakistan’s leading and most trusted furniture brand. Oxford Sofa has established itself as Pakistan's leading and most trusted furniture brand. Renowned for its high-quality products, it has become a household name. The brand offers a diverse range of premium furniture items. Its commitment to excellence has garnered widespread recognition. Today, Oxford Sofa continues to set the standard in the furniture industry in Pakistan.</p>
+    </div>
+
+    <div class="mon mt-4">
+        <div class="p mt-4">
+            <h2 class="mt-4">Oxford Sofa Journey</h2>
+            <p class="mt-4">The Oxford Sofa Journey refers to a unique travel experience using vintage or bespoke sofas as the main seating arrangement. Originating in Oxford, England, this journey often involves leisurely exploration of scenic and historic locations. Participants sit on comfortable sofas placed on various modes of transport, such as boats, buses, or even open-air platforms. The journey emphasizes relaxation, conversation, and taking in the surroundings at a leisurely pace. It may include guided tours, storytelling, and cultural insights provided by local experts. The sofas are often selected for their comfort and aesthetic appeal, adding a touch of luxury to the experience. The journey can be customized for different group sizes and preferences, ranging from intimate couples to larger groups. It's a popular choice for special occasions, such as anniversaries, birthdays, or corporate events. The Oxford Sofa Journey combines elements of sightseeing, relaxation, and social interaction in a unique format. It offers a memorable and distinctive way to explore the beauty and history of the Oxford area.transport, such as boats, buses, or even open-air platforms. The journey emphasizes relaxation, conversation, and taking in the surroundings at a leisurely pace. It may include guided tours, storytelling, and cultural insights provided by local experts. The sofas are often selected for their comfort and aesthetic appeal, adding a touch of luxury to the experience. The journey can be customized for different group sizes and preferences, ranging from intimate couples to larger groups. It's a popular choice for special occasions, such as anniversaries, birthdays, or corporate events. The Oxford Sofa Journey combines elements of sightseeing, relaxation, and social interaction in a unique format. It offers a memorable and distinctive way to explore the beauty and history of the Oxford area.</p>
+        </div>
+    </div>
+
+    <h1 style="text-align: center; margin-top: 50px;"> Our Stores</h1>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <!-- <img src="sofa1.jpg " alt=""> -->
+                    <h5 class="card-title">Karachi</h5>
+                    <p class="card-text">Building No. 43-C Bukhari Lane No. 11، D.H.A Phase 6 Bukhari Commercial Area;, 75500</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <!-- <img src="images/Islamabad_Showroom_814x_crop_center.jpg"> -->
+                    <h5 class="card-title">Islamabad</h5> 
+                    <p class="card-text">Gate # 4, Main Grand Trunk Rd, opposite DHA Phase-II, Islamabad.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+     <hr><hr>
+        <div class="text-center">
+            <p>Experience unparalleled comfort and style with our premium sofa collection, crafted to perfection for your ultimate relaxation. Transform your living space with our elegant sofas, where luxury meets functionality, designed to elevate your home decor. Indulge in the perfect blend of sophistication and comfort with our exquisite range of sofas, <br>tailored for modern living. Visit our website to explore more!</p>
+        </div>
+        <hr><hr>
+    <!-- End Content -->
+
+     <!-- Start Footer -->
+ <footer class="footer">
+  <div class="container">
+    <div class="f-h text-left text-white mb-5">
+            <h1><b><i>O<sup>xford</sup> S<sub>ofa</sub></i></b></h1>
+        </div>
+    <div class="row mt-2">
+      <div class="col-md-3">
+        
+        <h5>About Us</h5><br>
+        <p>Experience unparalleled comfort and style with our premium sofa collection, crafted to perfection for your ultimate relaxation our elegant sofas, where luxury meets functionality, designed to elevate your home decor.</p>
+      </div>
+      <div class="col-md-3">
+        <h5>Quick Links</h5><br>
+        <ul class="list-unstyled">
+          <li><a href="miniproject.html">Home</a></li><br>
+          <li><a href="about.us.html">About Us</a></li><br>
+          <li><a href="#">Services</a></li><br>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+     <div class="col-md-3">
+    <h5>Contact Us</h5><br>
+    <ul class="list-unstyled">
+        <li>
+            <a href="mailto:jawadulbahar@gmail.com">
+                Email: <small><b><i>&nbsp;jawadulbahar@gmail.com</i></b></small>
+            </a>
+        </li><br>
+        <li>
+            <a href="tel:+923133998234">
+                Phone: <small><b><i>+92-3133998234</i></b></small>
+            </a>
+        </li><br>
+        <li>
+            <a href="https://www.google.com/maps?q=Plot+F,+79,+Phase+1+Defence+View+Housing+Society,+Karachi,+Karachi+City,+Sindh" target="_blank">
+                <i>Plot F, 79, Phase 1 Defence View Housing Society, Karachi, Karachi City, Sindh</i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+      <div class="col-md-3">
+        <h5 style="margin-left: 10px;">Follow Us</h5><br>
+        <div class="social-icons">
+          <a href="#"><i class="fa fa-facebook-f"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a><br><br>
+          <a href="https://wa.me/923133998234"><button style="height: 40px;" class="bont"><i class="fa fa-whatsapp" style="font-size:20px;color:white"> Message</i></button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+ <footer class="footer">
+  <div class="container">
+    <div class="row">
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container d-flex justify-content-between align-items-center">
+      <p class="mb-0">&copy; 2024 VIP Furniture. All rights reserved.</p>
+     
+      <!-- <div class="social-icons">
+        <a href="#"><i class="fa fa-facebook-f"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+      </div> -->
+
+    </div>
+  </div>
+</footer>
+</footer>
+<!-- End Footer -->
+</i></body>
+</html>

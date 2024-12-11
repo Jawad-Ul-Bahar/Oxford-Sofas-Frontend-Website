@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/WhatsApp Image 2024-06-25 at 3.05.35 PM.jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        /* Start Content */
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 110vh;
+            margin-top: 100px;
+            background-color: white;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        h3 {
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: darkslategray;
+            font-size: 30px;
+        }
+        .p{
+            margin-top: 7px;
+        }
+        .login-container {
+            background-color: whitesmoke;
+            opacity: 0.9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 250px;
+            padding: 7px;
+            border: 1px solid gray;
+            border-radius: 4px;
+            align-items: center;
+            margin-right: 20px;
+        }
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .btnn {
+            position: relative;
+            width: 50%;
+            height: 45px;
+            background-color: darkslategray;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 40px;
+            margin-left: 77px;
+            margin-top: 15px;
+        }
+        .a {
+            text-decoration: none;
+            color: white;
+        }
+        .button1:hover {
+            background-color: lightslategray;
+            transition: 1s;
+        }
+        .fp {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: rgb(77, 77, 216);
+        }
+        .fp:hover {
+            color: rgb(46, 46, 88);
+        }
+        .p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 10px;
+            text-align: center;
+            color: darkslategray;
+        }
+        .btn {
+            margin-top: 20px;
+        }
+        .toggle-password {
+            position: absolute;
+            right: 25px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+        #message {
+            color: red;
+            margin-top: 0px;
+        }
+        .disabled {
+            pointer-events: none;
+            opacity: 0.5;
+        }
+        #username {
+            margin-left: 18px;
+            width: 300px;
+            border-radius: 30px;
+            margin-top: 30px;
+            background: transparent;
+        }
+        #password {
+            margin-left: 18px;
+            width: 300px;
+            border-radius: 30px;
+             background: transparent;
+        }
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 10px;
+            animation-name: animatetop;
+            animation-duration: 0.4s;
+        }
+        @keyframes animatetop {
+            from { top: -300px; opacity: 0 }
+            to { top: 0; opacity: 1 }
+        }
+        .close {
+            color: darkslategray;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: lightslategray;
+            text-decoration: none;
+            cursor: pointer;
+            transition: 1s;
+        }
+        .modal-button {
+            background-color: darkslategray;
+            color: white;
+                border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .modal-button:hover{
+            background-color: lightslategray;
+            transition: 1s;
+        }
+        .pera{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            color: darkslategray;
+        }
+        .fa{
+            font-size: 48px;
+            color: darkslategray;
+        }
+        .fa:hover{
+            color: lightslategray;
+            font-size: 50px;
+            transition: 1s;
+        }
+        /* End Content */
+    </style>
+</head>
+<body>
+     <!-- Start Content -->
+     <div class="content">
+     <div class="main-content container-fluid">
+    <div class="login-container">
+        <a href="miniproject.html"><i class="fa fa-arrow-circle-left" id="backButton"></i></a>
+        <h3>Login Here</h3>
+        <form id="loginForm">
+            <div class="input-group">
+                <input type="text" id="username" placeholder="Username" required><br>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Password" required>
+                <i class="fas fa-eye toggle-password" id="togglePassword"></i>
+            </div>
+            <p class="p">If you enter the wrong password or username three times, the page will be disabled.</p>
+            <button class="button1 btnn" type="button" onclick="checkLogin()">Login</button><br>
+            <a href="SignIn.html"><button class="button1 btnn" type="button" onclick="showModal()">Register</button></a>
+            <a class="fp" href="forget.html">Forget Password?</a><br>
+        </form>
+        <p id="message"></p>
+    </div>
+
+    <!-- Back Button Modal -->
+    <!-- <div id="backButtonModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeBackButtonModal()">&times;</span>
+            <p class="p">There is no more back click. If you want to search, use Google.</p>
+        </div>
+    </div> -->
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p class="pera">If you have not any account please register your account.</p>
+            <a href="SignIn.html"><button class="modal-button" onclick="window.location.href='file:///C:/Users/Sarfaraz%20Ahmed/Desktop/The%20Complete%20Web%20Devolopment/Fron-End/New%20folder/SignIn.html?username=Jawad+Ul+Bahar&email=jawadulbahar%40gmail.com&password=jawade&confirmPassword=jawade'">Register</button></a>
+        </div>
+    </div>
+    <!-- </div>
+    </div> -->
+    <!-- End Content -->
+    <script>
+        let attempts = 3;
+        const username = "jawadulbahar";
+        const password = "1234";
+
+        function checkLogin() {
+            const usernameInput = document.getElementById("username").value;
+            const passwordInput = document.getElementById("password").value;
+            if (usernameInput === username && passwordInput === password) {
+               window.location.href = 'miniproject.html'; // Redirect to the desired website
+            } else {
+                attempts--;
+                document.getElementById("message").textContent = `Incorrect username or password. Attempts left: ${attempts}`;
+                if (attempts === 0) {
+                    document.getElementById("loginForm").classList.add("disabled");
+                    document.getElementById("message").textContent = "Login disabled. Maximum attempts reached.";
+                }
+            }
+        }
+
+        document.getElementById('togglePassword').addEventListener('click', function () {
+            const passwordField = document.getElementById('password');
+            const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordField.setAttribute('type', type);
+            this.classList.toggle('fa-eye');
+            this.classList.toggle('fa-eye-slash');
+        });
+
+        function showModal() {
+            document.getElementById('registerModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('registerModal').style.display = 'none';
+        }
+
+        function showBackButtonModal() {
+            document.getElementById('backButtonModal').style.display = 'flex';
+        }
+
+        function closeBackButtonModal() {
+            document.getElementById('backButtonModal').style.display = 'none';
+        }
+
+        document.getElementById('backButton').addEventListener('click', showBackButtonModal);
+
+        // Show modal on page load
+        window.onload = function() {
+            showModal();
+        };
+    </script>
+</body>
+</html>

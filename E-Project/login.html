@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My account - HR Dropshipping</title>
+  <link rel="icon" href="img/titlelogo.png">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    
+        .header{
+            display: flex;
+        }
+        .list{
+            text-decoration: none;
+            font-size: small;
+            color: grey;
+            margin-top: 20px;
+            position: relative;
+            margin-left: 200px;
+        }
+        a{
+            text-decoration: none;
+            color: gray;
+            margin: 5px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .logo{
+            height: 60px;
+            width: 220px;
+            margin-top: 20px;
+            margin-left: 120px;
+        }
+        i{
+            margin-right: 5px;
+        }
+        .btn{
+            margin-left: 120px;
+            width: 90px;
+            height: 20px;
+            font-size: small;
+            margin-top: 40px;
+            background-color: transparent;
+            border: none;
+            /* margin: 15px; */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: gray;
+        }  
+        .btn1{
+            margin-left: 28px;
+            margin-top: 40px;
+            width: 50px;
+            height: 50px;
+            font-size: small;
+            background-color: transparent;
+            border: none;
+            /* margin: 15px; */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: gray;
+        }
+        .lock{
+            margin-top: 28px;
+            margin-left: 17px;
+        }
+        .rf{
+            margin-top: 2px;
+            margin-right: 750px;
+            font-size: small;
+        }
+        .img1{
+            width: 1200px;
+            height: 500px;
+            margin-top: 10px;
+            }
+            a:hover{
+                color: black;
+            }
+            i:hover{
+                color: black;
+            }
+            .lock:hover{
+                color: rgb(54, 54, 133);
+            }
+            button:hover{
+                color: black;
+            }
+        @media (max-width : 100px){
+        
+        body{
+            width: 700px;
+        }
+        }
+        P{
+            margin-left: 520px;
+            font-size: 22px;
+            color: grey;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    body {
+        text-align: center;
+    }
+    html {
+      height: 100%; 
+      width: 100%;
+    }
+    h3 {
+        font-size: 70px;
+        color: rgb(2, 53, 2);
+        background-color: lightgreen;
+    }
+    h3{
+      margin-top: 50px;
+    }
+    #loginForm {
+      margin-top: 20px;
+    }
+    #message {
+      color: black;
+    }
+    .disabled {
+      pointer-events: none;
+      opacity: 0.5;
+    }
+    input {
+       margin: 10px;
+       border-radius: 10px;
+       border: 1px solid gray;
+       height: 30px;
+       width: 300px;
+    }
+    .button1 {
+       background-color: rgb(31, 174, 31); 
+       width: 150px;
+       height: 30px;
+       border: 1px solid gray;
+       border-radius: 10px;
+       position: relative;
+       font-size: 17px;
+       font-weight: bold;
+       color: b(2, 53, 2);
+       margin-top: 10px;
+       color: rgb(2, 25, 2);
+    }
+    .fp{
+      text-decoration: none;
+      font-size: 20px;
+      padding-top: 100px;
+    }
+
+  </style>
+</head>
+<body>
+      <div class="header">
+          <div class="list">
+    <i class="fa fa-search me"></i>
+    <a class="li" href="#">HOME</a>
+    <a href="#">SHOP</a>
+    <a href="#">ABOUT</a>
+    <a href="#">CONTACT</a>
+          </div>
+        <div class="image">
+    <img class="logo" src="img/hrlogo1.jpeg" alt="logo">
+         </div>
+         <a class="btn" href="#">LOGIN/REGISTER</a>
+         <a class="btn1" href="#">CART/0Rs</a>
+    <i class="fa fa-lock lock" style="font-size:36px"></i>
+</div>
+<div class="rf">
+    <a href="#">REPLACEMENT FORM</a>
+</div>
+  <h3>Login Here</h3>
+  <form id="loginForm">
+    <input type="text" id="username" placeholder="Username" required><br>
+    <input type="password" id="password" placeholder="Password" required><br>
+    <button class="button1" type="button" onclick="checkLogin()">Login</button>
+    <button class="button1">Register</button><br>
+    <a class="fp" href="#">Forget Password?</a><br>
+    <button class="button1">Back</button>
+  </form>
+  <p id="message"></p>
+  <script>
+    let attempts = 3;
+const username = "jawadulbahar@gmail.com";
+const password = "qumbrani";
+function checkLogin() {
+  const usernameInput = document.getElementById("username").value;
+  const passwordInput = document.getElementById("password").value;
+  if (usernameInput === username && passwordInput === password) {
+    document.write("<i><h1>Login successful!</h1></i>");
+  } else {
+    attempts--;
+    document.getElementById("message").textContent = `Incorrect username or password. Attempts left: ${attempts}`;
+    if (attempts === 0) {
+      document.getElementById("loginForm").classList.add("disabled");
+      document.getElementById("message").textContent = "Login disabled. Maximum attempts reached.";
+    }
+  }
+}
+
+  </script>
+</body>
+</html>

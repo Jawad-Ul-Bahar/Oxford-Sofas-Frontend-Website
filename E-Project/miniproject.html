@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/WhatsApp Image 2024-06-25 at 3.05.35 PM.jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Oxford Sofa</title>
+    <style>
+  
+       /* Start Header */
+         *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .navbar-brand {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        }
+        .me-2 {
+        border-radius: 20px;
+        border: 1px solid rgb(48, 48, 48);
+        width: 250px;
+        }
+        .navbar-brand img {
+        height: 50px;
+        width: 100px;
+        opacity: 0.7;
+        }
+
+        .navbar {
+        font-size: 15px;
+        position: fixed;
+        top: 0%;
+        z-index: 1;
+        width: 100%;
+        opacity: 0.8;
+        }
+        .btn {
+        border-radius: 20px;
+        margin-left: 0%;
+        }
+        @media (max-width: 992px) {
+        .navbar-brand {
+        position: static;
+        transform: none;
+        margin: auto;
+        }
+        }
+        .list{
+          text-decoration: none;
+          color: gray;
+          margin: 10px;
+        }
+        .list:hover{
+          color: black;
+        }
+        
+        body, html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        }
+        .dd-flex{
+            border-bottom: 1px solid gray;
+            height: 40px;
+        }
+        .dd-flex:hover{
+          border: 2px solid gray;
+          border-radius: 30px;
+          transition: 1s;
+        }
+        /* End Header */
+
+
+        /* Start Content */
+        .video {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        }
+        .video video {
+        width: 100%;
+        height: 80%;
+        margin-top: 57px;
+        object-fit: cover;
+        }
+        .content {
+        position: absolute;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: bold;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: rgb(0, 0, 0);
+        z-index: 1;
+        padding: 20px;
+        border-radius: 10px;
+        opacity: 0.7;
+        }
+      .view{
+          text-align: center;
+          text-decoration: none;
+          font-size: 20px;
+          /* float: right; */
+           
+        }
+        .class{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        margin-top: 25px;
+        }
+        .imag{
+        width: 80%;
+        height: 400px;
+        margin-left: 10%;
+        }
+        .card{
+        text-align: center;
+        }
+        .dracs{
+        margin-top: 40px;
+        }
+        .checked{
+        color: orange;
+        }
+        .drac{
+        margin-top: 20px;
+        }
+        .square{
+        z-index: 1;
+        position: fixed;
+        top: 93%;
+        left: 1%;
+        width: 100px;
+        height: 30px;
+        background-color: rgb(107, 218, 107);
+        border: none;
+        border-radius: 30px;
+        color: white;
+        font-weight: bold;
+        opacity: 0.7;
+        }
+        .square:hover{
+          background-color: darkgreen;
+          transition: 1s;
+        }
+        @media (max-width: 780px){
+          .square{
+             max-width: 600px;
+             width: 80px;
+             height: 20px;
+             font-size: 10px;
+          }
+        }
+  
+        #scrollTopBtn {
+        display: none; 
+        position: fixed; 
+        bottom: 20px; 
+        right: 20px; 
+        z-index: 99; 
+        font-size: 40px; 
+        color: gray; /* Icon color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        }
+        #scrollTopBtn:hover{
+        color: #212529;
+        font-size: 55px;
+        transition: 0.9s;
+        }
+        .bttn{
+        width: 120px;
+        height: 30px;
+        border: none;
+        /* border-radius: 30px; */
+        background-color: gray;
+        color: white;
+        font-weight: bold;
+
+        }
+        .bttn:hover{
+        background-color: lightslategray;
+        border-radius: 30px;
+        transition: 1s ease-in-out;
+        }
+        .sofac{
+        height: 500px;
+        }
+        .bttnn{
+        width: 120px;
+        height: 30px;
+        float: right;
+        border: none;
+        /* border-radius: 30px; */
+        background-color: gray;
+        color: white;
+        font-weight: bold;
+        }
+        .bttnn:hover{
+        background-color: lightslategrey;
+        border-radius: 30px;
+        transition: 1s ease-in-out;
+        }
+        .share{
+        float: right;
+        margin-right: 2%;
+        text-decoration: none;
+        color: darkslategrey;
+        }
+        .jawa{
+        /* float: right; */
+        margin-left:  400px;
+        }
+        .small{
+        font-size: small;
+        }
+        .sard{
+        float: left;
+        }
+        .cred{
+        margin-left: 30px;
+        }
+        .serd {
+        margin: 1rem;
+        max-width: 300px;
+        }
+        .fa-star.checked {
+        color: orange;
+        }
+        .carousel-item {
+        width: 75%;
+        height: 80vh;
+        margin-left: 15%;
+        }
+        .card-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+        .carousel-control-prev, .carousel-control-next {
+        width: 5%;
+        }
+
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+        background-color: black;
+        border-radius: 50%;
+        }
+        .iner{
+        float: left;
+        }
+          .carousel-indicators {
+            display: none;
+        }
+        /* End Content */
+
+
+        /* Start Footer */
+        .footer {
+        background-color: #343a40;
+        color: white;
+        padding: 40px 0;
+        width: 100%;
+        padding-bottom: 10px;
+
+        }
+        .footer a {
+        color: #adb5bd;
+        text-decoration: none;
+        }
+        .footer a:hover {
+        color: white;
+        text-decoration: none;
+        }
+        .footer .social-icons a {
+        margin: 10px;
+        margin-bottom: -5px;
+        }
+        .f-h{
+        margin-top: -3%;
+        }
+        .copy{
+        margin-top: 50px;
+        }
+        .footer-bottom {
+        background-color: #212529;
+        color: #adb5bd;
+        padding-bottom: 0px 0;
+        margin-top: 30px;
+        height: 29px;
+        }
+        .footer-bottom .social-icons a {
+        margin-left: 10px;
+        color: #adb5bd;
+        text-decoration: none;
+        }
+        .footer-bottom .social-icons a:hover {
+        color: white;
+        }
+        .bont{
+        width: 50%;
+        background-color: green;
+        border: none;
+        border-radius: 30px;
+        }
+        .bont:hover{
+        background-color: rgb(54, 227, 54);
+        transition: 0.7s;
+        }
+        /* End Footer */
+      
+    </style>
+</head>
+<body><i>
+     <!-- Start Header -->
+    <nav class="navbar navbar-expand-lg bg-secondary-subtle text-black">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="miniproject.html"><b><i>O<sup>xford</sup> S<sub>ofa</sub></i></b></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">                       
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-user-circle-o" style="font-size:25px; color:gray;"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="LoginPage.html"><b>Login / Register</b></a></li>
+                            </ul>
+
+                        </li>
+                        <a class="nav-link active" aria-current="page" href="miniproject.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>      
+                        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#jawad"><b>Best Categories</b></a></li><hr>
+            <li><a class="dropdown-item" href="#jawad1"><b>Best Deals</b></a></li><hr>
+            <li><a class="dropdown-item" href="#jawad2"><b>Best Sales</b></a></li><hr>
+            <li><a class="dropdown-item" href="#jawad3"><b>Our Collection</b></a></li><hr>
+            <li><a class="dropdown-item" href="#jawad4"><b>Premium Sofas</b></a></li>
+          </ul>
+          
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle btn-primary" href="cart.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-cart-arrow-down" style="font-size:25px; color:gray;"></i></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="cart.html"><b>Add To Cart</b></a></li>
+          </ul>
+        </li>
+          </ul>
+        </li>
+          </ul>
+                <form class="d-flex dd-flex" role="search">
+                    <input class="form-control me-2 bg-transparent border-0" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn border-0" type="submit"><i class="fa fa-search" style="font-size:25px; margin-top: -1px; float: right;"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</nav>
+    <!-- End Header -->
+
+    <!-- Start Content -->
+          <div class="video">
+        <video autoplay muted loop>
+            <source src="img/videoplayback.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <h1>Discover Comfort and Elegance</h1>
+            <h3>Explore Our Exclusive Collection of Premium Sofas</h3>
+        </div><hr class="mt-4">
+       <div class="carousel-section container">
+        <h1 id="jawad1" class="text-center my-4 mt-4">BEST DEALS</h1>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner justify-content-center ">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img style="margin-bottom: -50px;" class="imag" src="img/serosofa.webp" class="d-block w-100" alt="Sofa 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-black opacity-100 fs-1 text mt-4">Luxurious Comfort</h5>
+                        <p class="text-black opacity-100 fs-4 text">Experience comfort with our premium range of sofas.</p>
+                          <h5>Sero Sofa 3-Seater (Dark Brown)</h5>
+                          <p><b>Rs.140,700</b></p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img class="imag" src="img/kentsofa.webp" class="d-block w-100" alt="Sofa 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-black opacity-100 fs-1 text opacity-50 mt-4">Modern Elegance</h5>
+                        <p class="text-black opacity-100 fs-4 text">Enhance your living space with our stylish and modern sofa designs.</p>
+                        <h5>Kent Sofa 3-Seater (Dusty Pink)</h5>
+                          <p><b>Rs.129,100</b></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="imag" src="img/Majestic3SeaterMaroon-02_7cd4ed61-ed7d-4aa4-a81c-dc74e4f9dcee_580x_crop_center.webp" class="d-block w-100" alt="Sofa 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-black opacity-100 fs-1 text">Classic Style</h5>
+                        <p class="text-black opacity-100 fs-4 text">Timeless and elegant sofas that never go out of style.</p>
+                        <h5>Majestic Sofa 3-Seater (Maroon)</h5>
+                          <p><b>Rs.120,000</b></p>
+                    </div>
+                </div>
+            </div>
+             <div class="container">
+        <div class="carousel slide" id="carouselExampleDark" data-bs-ride="carousel">
+            <!-- Carousel items here -->
+
+            <div class="view">
+                <a class="view" href="bestdeals.html">View Details</a>
+            </div>
+
+            <!-- Hide carousel indicators -->
+            <button style="margin-top: -55%;" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button style="margin-top: -55%;" class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div><hr>
+                 <h1 id="jawad2" class="text-center my-4">BEST SALES</h1>
+            <div class="card-group">
+  <div class="card border-0">
+    <img src="img/singlesofa1.webp" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Sofa Cooper (Velvet Olive Green)</h5>
+      <p>Elevate your living space with the luxurious of the Sofa Cooper in elegant Velvet Olive Green</p>
+      <p class="card-text"><del>Rs.92,200</del> <b>Rs.57,000</b></p>
+      <p class="card-text"><small class="text-body-secondary">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span></small></p>
+        <button class="bttn">Add to cart</button>
+    </div>
+  </div>
+  <div class="card border-0">
+    <img src="img/singlesofa2.webp" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Sofa Cooper (Beige Velvet)</h5>
+      <p>Experience timeless elegance and comfort with the Sofa Cooper in exquisite Beige Velvet</p>
+       <p class="card-text"><del>Rs.68,900</del> <b>Rs.57,000</b></p>
+      <p class="card-text"><small class="text-body-secondary">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span></small></p>
+        <button class="bttn">Add to cart</button>
+    </div>
+  </div>
+  <div class="card border-0">
+    <img src="img/singlesofa3.webp" class="card-img-top" alt="...">
+    <div class="card-body ">
+      <h5 class="card-title">Kessel Sofa (Grey)</h5>
+      <p>Embrace modern sophistication and comfort with the sleek and stylish Kessel Sofa in Grey</p>
+        <p class="card-text"><del>Rs.58,632</del> <b>Rs.50,000</b></p>
+      <p class="card-text"><small class="text-body-secondary">
+        <span class="fa fa-star checked"></span>
+        <xspan class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span></small></p>
+        <button class="bttn">Add to cart</button>
+    </div>
+</div>
+<div class="card-group  drac">
+  <div class="card border-0">
+    <img src="img/singlesofa4.webp" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Noble Sofa (Off-White)</h5>
+      <p>Enhance your living space with the timeless serene of the Noble Sofa in Off-White</p>
+      <p class="card-text"><del>Rs.78,440</del> <b>Rs.60,000</b></p>
+      <p class="card-text"><small class="text-body-secondary">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span></small></p>
+        <button class="bttn">Add to cart</button>
+    </div>
+  </div>
+  <div class="card border-0">
+    <img src="img/singlesofa5.webp" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Noble Sofa (Winter-Blue)</h5>
+      <p>Add a touch of sophistication and tranquility to your home with the Noble Sofa in Winter Blue</p>
+       <p class="card-text"><del>Rs.78,440</del> <b>Rs.60,000</b></p>
+      <p class="card-text"><small class="text-body-secondary">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span></small></p>
+        <button class="bttn">Add to cart</button>
+    </div>
+  </div>
+  <div class="card border-0">
+    <img src="img/singlesofa6.webp" class="card-img-top" alt="...">
+    <div class="card-body ">
+      <h5 class="card-title">Astor Sofa (Black)</h5>
+      <p>Elevate your living space with the sleek and modern Astor Sofa in classic black</p>
+        <p class="card-text"><del>Rs.99,428</del> <b>Rs.85,000</b></p>
+      <p class="card-text"><small class="text-body-secondary">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span></small></p>
+        <button class="bttn">Add to cart</button>
+    </div>
+    </div>
+</div>
+ <div class="card drac  border-0">
+    <img src="img/singlesofa7.webp" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Astor Sofa (Brown)</h5>
+      <p>Add warmth and sophistication to your home with the elegant Astor Sofa in rich brown</p>
+      <p class="card-text"><del>Rs.99,832</del> <b>Rs.85,000</b></p>
+      <p class="card-text"><small class="text-body-secondary"></small></p>
+      <button class="bttn">Add to cart</button>
+    </div>
+  </div>
+  <div class="card drac border-0">
+    <img src="img/singlesofa8.webp" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Lodge Sofa (Mid-Grey)</h5>
+      <p>Enhance your space with the Lodge Sofa in Mid-Grey, offering a sleek and modern for any room</p>
+       <p class="card-text"><del>Rs.75,472</del> <b>Rs.65,000</b></p>
+      <p class="card-text"><small class="text-body-secondary"></small></p>
+      <button class="bttn">Add to cart</button>
+    </div>
+  </div>
+  <div class="card  drac border-0">
+    <img src="img/singlesofa9.webp" class="card-img-top" alt="...">
+    <div class="card-body ">
+      <h5 class="card-title">Lodge Sofa (Bottle Green)</h5>
+      <p>Revitalize your room with the Lodge Sofa in Bottle Green, sophistication with a burst of color</p>
+        <p class="card-text"><del>Rs.75,472</del> <b>Rs.65,000</b></p>
+      <p class="card-text"><small class="text-body-secondary"></small></p>
+      <button class="bttn">Add to cart</button>
+    </div>
+</div>
+</div>
+<div class="view mt-2">
+                <a class="view" href="bestsale.html">View Details</a>
+            </div><hr>
+<div class="card text-bg-dark drac mt-4">
+  <img src="img/oxsofa.jpeg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+  </div>
+</div>
+<div><a href="compare.html"><button class="square">Compare</button></a></div>
+<div><a href="#" id="scrollTopBtn"><i class="fa fa-arrow-up"></i></a></div>
+                 <h1 id="jawad3" class="text-center my-4">OUR COLLECTIONS</h1>
+
+
+<div class="card-group ml-2">
+  <div class="card border-0">
+    <img src="img/collection1.avif" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Vienna 3 Seater Sofa</h5>
+      <p>Vienna 3 Seater Sofa: Timeless elegance and supreme comfort for your living space</p>
+      <p class="card-text"><b>Rs.644,000 – Rs.648,000</b></p>
+      <p class="card-text"><small class="text-body-secondary">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span></small></p>
+        <button class="bttn">Add to cart</button>
+    </div>
+  </div>
+  <div class="card border-0">
+    <img src="img/collection2.webp" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Canton 3 Seater Sofa</h5>
+      <p>Canton 3 Seater Sofa: Stylish design meets exceptional comfort for a perfect home accent</p>
+       <p class="card-text"><b>Rs.995,000</b></p>
+      <p class="card-text"><small class="text-body-secondary">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span></small></p>
+        <button class="bttn">Add to cart</button>
+    </div>
+  </div>
+  <div class="card border-0">
+    <img src="img/collection3.avif" class="card-img-top" alt="...">
+    <div class="card-body ">
+      <h5 class="card-title">Swan Sofa</h5>
+      <p>Swan Sofa: Graceful design meets ultimate comfort, bringing elegance and relaxation to your living space</p>
+        <p class="card-text"><b>Rs.555,000</b></p>
+      <p class="card-text"><small class="text-body-secondary">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span></small></p>
+        <button class="bttn">Add to cart</button>
+    </div>
+</div>
+    <div class="card border-0">
+    <img src="img/collection4.avif" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Marlet Sofa</h5>
+      <p>Marlet Sofa: A blend of sophistication and comfort, perfect for any modern living space</p>
+       <p class="card-text"><b>Rs.241,000 - Rs.331,000</b></p>
+      <p class="card-text"><small class="text-body-secondary">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span></small></p>
+        <button class="bttn">Add to cart</button>
+    </div>
+  </div>
+    <div class="card-group drac">
+  <div class="card border-0">
+    <img src="img/collection5.avif" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Dante 2 Seater Sofa</h5>
+      <p>Dante 2 Seater Sofa: A compact design offering elegance and comfort for your cozy corners</p>
+      <p class="card-text"><b>Rs.409,000</b></p>
+      <p class="card-text"><small class="text-body-secondary">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span></small></p>
+        <button class="bttn">Add to cart</button>
+    </div>
+  </div>
+  <div class="card crad border-0">
+    <img src="img/collection6.webp" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Sirona 3.5 Seater Sofa</h5>
+      <p>Sirona 3.5 Seater Sofa: Ample seating meets refined style in this spacious and elegant piece</p>
+       <p class="card-text"><b>Rs.835,000</b></p>
+      <p class="card-text"><small class="text-body-secondary">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span></small></p>
+        <button class="bttn">Add to cart</button>
+    </div>
+  </div>
+  <div class="card crad border-0">
+    <img src="img/collection7.avif" class="card-img-top" alt="...">
+    <div class="card-body ">
+      <h5 class="card-title">Manchester Triple Sofa</h5>
+      <p> A timeless design that combines luxury and comfort for a truly exceptional seating experience</p>
+        <p class="card-text"><del>Rs.779,000</del> <b>Rs.389,500</b></p>
+      <p class="card-text"><small class="text-body-secondary">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span></small></p>
+        <button class="bttn">Add to cart</button>
+    </div>
+    </div>
+    <div class="card border-0">
+    <img src="img/collection8.avif" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Valentino 2.5 Seater Sofa</h5>
+      <p>Elegant and refined, offering supreme comfort and a touch of sophistication to any living space</p>
+       <p class="card-text"><b>Rs.840,000</b></p>
+      <p class="card-text"><small class="text-body-secondary">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star "></span>
+        <span class="fa fa-star"></span></small></p>
+        <button class="bttn">Add to cart</button>
+    </div>
+  </div>
+    </div>
+    </div>
+    <div class="view mt-2">
+                <a class="view" href="ourcollec.html">View Details</a>
+            </div><hr>
+
+
+    <div class="container">
+    <h1 id="jawad" class="text-center my-4 mb-4">BEST CATEGORIES</h1>
+    <div class="d-flex justify-content-center flex-wrap">
+        <div class="card sard mx-4">
+            <div class="card-body crad">
+                <p class="card-text text-end"><small class="text-body-secondary">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span></small></p>
+                <h5 class="text-end">CLASSIC SOFAS</h5>
+                <h3 class="card-title text-end">Always in Style</h3>
+                <p class="card-text text-end"><small class="small">SKU: 40596 - Light Green - Three seater</small></p>
+                <p class="card-text text-end">Sofas for life, means timelessly tasteful furniture that endures.<br>Grounded in classic shapes and reimagined for a modern world.</p><br>
+                <p class="card-text text-end"><b>Rs.850,000</b></p>
+                <p class="card-text text-end">Color: <b>Light Green</b></p>
+                <button class="bttnn card-text item-end">Add to cart</button><br><br>
+                <a href="#"><i class="fa fa-share share" style="font-size:20px "> Share</i></a>
+            </div>
+            <img src="img/classic.jpg" class="card-img-bottom" alt="...">
+        </div>
+        <div class="card sard">
+            <div class="card-body crad">
+                <p class="card-text text-end"><small class="text-body-secondary">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span></small></p>
+                <h5 class="text-end">MODULAR SOFAS</h5>
+                <h3 class="card-title text-end">Mastering Modernity</h3>
+                <p class="card-text text-end"><small class="small">SKU: 40596 - Dark Green - Three seater</small></p>
+                <p class="card-text text-end">Good design is a matter of organising space to please the eye<br>and hold the rhythms of life. Flexible Furniture is a means of<br>sculpting your space to fit you.</p>
+                <p class="card-text text-end"><b>Rs.850,000</b></p>
+                <p class="card-text text-end">Color: <b>Dark Green</b></p>
+                <button class="bttnn card-text item-end">Add to cart</button><br><br>
+                <a href="#"><i class="fa fa-share share" style="font-size:20px "> Share</i></a>
+            </div>
+            <img src="img/otto_modular.jpg" class="card-img-bottom" alt="...">
+        </div>
+    </div>
+</div>
+<div class="container dracs">
+<div class="d-flex justify-content-center flex-wrap">
+        <div class="card sard mx-4 mt-4">
+            <div class="card-body crad">
+                <p class="card-text text-end"><small class="text-body-secondary">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span></small></p>
+                <h5 class="text-end">SCANDI SOFAS</h5>
+                <h3 class="card-title text-end">The Scandinavian Way</h3>
+                <p class="card-text text-end"><small class="small">SKU: 40596 - Light Blue - Three seater</small></p>
+                <p class="card-text text-end">The many virtues of Scandinavian design are no secret. The style<br>is articulated in sleek, sweeping lines and fine natural materials</p><br>
+                <p class="card-text text-end"><b>Rs.720,840</b></p>
+                <p class="card-text text-end">Color: <b>Light Blue</b></p>
+                <button class="bttnn card-text item-end">Add to cart</button><br><br>
+                <a href="#"><i class="fa fa-share share" style="font-size:20px "> Share</i></a>
+            </div>
+            <img src="img/scandi.jpg" class="card-img-bottom" alt="...">
+        </div>
+        <div class="card sard">
+            <div class="card-body crad"><br>
+                <p class="card-text text-end"><small class="text-body-secondary">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span></small></p>
+                <h5 class="text-end">ZACHARY SOFA</h5>
+                <h3 class="card-title text-end">Mastering Modernity</h3>
+                <p class="card-text text-end"><small class="small">SKU: 40596 - Off White - Three seater</small></p>
+                <p class="card-text text-end">Good design is a matter of organising space to please the eye<br>and hold the rhythms of life flexible Furniture is a means of<br>sculpting your space to fit you.</p>
+                <p class="card-text text-end"><b>Rs.650,000</b></p>
+                <p class="card-text text-end">Color: <b>Off White</b></p>
+                <button class="bttnn card-text item-end">Add to cart</button><br><br>
+                <a href="#"><i class="fa fa-share share" style="font-size:20px "> Share</i></a>
+            </div>
+            <img src="img/cornersofa_515x515.jpeg" class="card-img-bottom" alt="..."> 
+        </div>
+    </div>
+</div><br>
+ <div class="view mt-2">
+                <a class="view" href="bestcateg.html">View Details</a>
+            </div><hr>
+
+<div class="container">
+<h1 id="jawad4" class="text-center my-4 mb-4">PREMIUM SOFAS</h1>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card border-0">
+      <img src="img/premium1.avif" class="card-img-top" alt="...">
+      <div class="card-body iner text-start">
+        <h5 class="card-title">Marla 2 seater</h5>
+        <p>Discover the perfect blend of style and comfort with our Classic Sofas</p>
+        <p class="card-text">Rs. <b>331,000</b></p>
+        <p><small>COLOR: <b>CASABLANCA SMOKED</b></small></p>
+        <p><small>STYLE: <b>BLACK LEGS</b></small></p>
+         <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span></small></p>
+        <button style="float: left;" class="bttnn card-text item-start">Add to cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card border-0">
+      <img src="img/premium4.avif" class="card-img-top" alt="...">
+      <div class="card-body iner text-start">
+         <h5 class="card-title">Marla Wing Chair</h5>
+        <p>Transform your living room with the modern design of our Contemporary Sofas</p>
+        <p class="card-text">Rs. <b>Rs.199,000</b></p>
+        <p><small>COLOR: <b>CASABLANCA CREAM</b></small></p>
+        <p><small>STYLE: <b>BROWN LEGS</b></small></p>
+         <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span></small></p>
+        <button style="float: left;" class="bttnn card-text item-start">Add to cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card border-0">
+      <img src="img/premium5.webp" class="card-img-top" alt="...">
+      <div class="card-body iner text-start">
+         <h5 class="card-title">Chev Decorative Pillow</h5>
+        <p>Enjoy the versatility and modular design of our Sectional Sofas, perfect for any space</p>
+        <p class="card-text">Rs. <b>Rs.10,400</b></p>
+        <p><small>COLOR: <b>OFF-WHITE & CREAM</b></small></p>
+        <p><small>STYLE: <b>WITH PILLOW</b></small></p>
+         <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span></small></p>
+        <button style="float: left;" class="bttnn card-text item-start">Add to cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card border-0">
+      <img src="img/premium2.avif" class="card-img-top" alt="...">
+      <div class="card-body iner text-start">
+         <h5 class="card-title">Alto 2 Seater Sofa</h5>
+        <p>Relax in the timeless beauty of our Traditional Sofas, a perfect addition to any home</p>
+        <p class="card-text">Rs. <b>Rs.379,000</b></p>
+        <p><small>COLOR: <b> PURPLE</b></small></p>
+        <p><small>SIZE: <b>W190 X H86 X D104 CM</b></small></p>
+         <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span></small></p>
+        <button style="float: left;" class="bttnn card-text item-start">Add to cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card border-0">
+      <img src="img/premium3.avif" class="card-img-top" alt="...">
+      <div class="card-body  iner text-start">
+        <h5 class="card-title">Linz 2.5 Seater Sofa</h5>
+        <p>Bring home the charm and elegance of our Victorian Sofas, crafted to perfection</p>
+        <p class="card-text">Rs. <b>Rs.476,000</b></p>
+        <p><small>COLOR: <b>GREY</b></small></p>
+        <p><small>SIZE:: <b>W198 X H79 X D99 CM</b></small></p>
+         <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span></small></p>
+        <button style="float: left;" class="bttnn card-text item-start">Add to cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card border-0">
+      <img src="img/premium6.webp" class="card-img-top" alt="...">
+      <div class="card-body iner text-start">
+        <h5 class="card-title">Dorian 2 Seater Sofa</h5>
+        <p>Add a touch of sophistication to your home with our Mid-Century Modern Sofas</p>
+        <p class="card-text">Rs. <b>Rs.504,000</b></p>
+        <p><small>COLOR: <b>CONTEMPORARY GREEN</b></small></p>
+        <p><small>STYLE: <b>BLACK LEGS</b></small></p>
+         <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span></small></p>
+        <button style="float: left;" class="bttnn card-text item-start">Add to cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card border-0">
+      <img src="img/premium7.webp" class="card-img-top" alt="...">
+      <div class="card-body iner text-start">
+         <h5 class="card-title">Maison 4 Seater Sofa</h5>
+        <p>Experience ultimate relaxation with our Recliner Sofas, designed for your comfort</p>
+        <p class="card-text">Rs. <b>Rs.644,000</b></p>
+        <p><small>COLOR: <b>PERSIAN RED</b></small></p>
+        <p><small>SIZE: <b>W247 X H79 X D102 CM</b></small></p>
+         <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span></small></p>
+        <button style="float: left;" class="bttnn card-text item-start">Add to cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card border-0">
+      <img src="img/premium8.webp" class="card-img-top" alt="...">
+      <div class="card-body iner text-start">
+         <h5 class="card-title">Milan 4 seater</h5>
+        <p>Embrace the sleek and chic look of our Minimalist Sofas, ideal for modern homes</p>
+        <p class="card-text">Rs. <b>Rs.795,000</b></p>
+        <p><small>COLOR: <b>TAUPE</b></small></p>
+        <p><small>SIZE: <b>W247 X H79 X D102 CM</b></small></p>
+         <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span></small></p>
+        <button style="float: left;" class="bttnn card-text item-start">Add to cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card border-0">
+      <img src="img/premium9.jpg" class="card-img-top" alt="...">
+      <div class="card-body iner text-start">
+        <h5 class="card-title">Mayfair Ottoman</h5>
+        <p>Make a bold statement with our Eclectic Sofas, featuring unique and artistic designs</p>
+        <p class="card-text">Rs. <b>731,000</b></p>
+        <p><small>COLOR: <b>BROWNISH</b></small></p>
+        <p><small>SIZE: <b> W284 X H143 X D284 CM</b></small></p>
+         <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span></small></p>
+        <button style="float: left;" class="bttnn card-text item-start">Add to cart</button>
+      </div>
+    </div>
+  </div><br></div><br>
+  <div class="view mt-4 text-center">
+                <a style="text-align: center;" class="view" href="presofas.html">View Details</a><hr>
+            </div>
+</div><br><br>
+<hr><hr>
+  <div class="text-center">
+    <p>Discover the epitome of comfort and elegance with our exclusive sofa collection. Our meticulously crafted designs combine luxurious materials with timeless style to enhance any living space. Each sofa is thoughtfully designed to provide unparalleled relaxation and support. Transform your home into a haven of comfort and sophistication with our premium range. Explore our collection and find the perfect piece to elevate your living environment.</p>
+</div>
+<hr><hr>
+</div>
+<!-- End Content -->
+  
+
+<!-- Start Footer -->
+ <footer class="footer">
+  <div class="container">
+    <div class="f-h text-left text-white mb-5">
+            <h1><b><i>O<sup>xford</sup> S<sub>ofa</sub></i></b></h1>
+        </div>
+    <div class="row">
+      <div class="col-md-3">
+        
+        <h5>About Us</h5><br>
+        <p>Experience unparalleled comfort and style with our premium sofa collection, crafted to perfection for your ultimate relaxation our elegant sofas, where luxury meets functionality, designed to elevate your home decor.</p>
+      </div>
+      <div class="col-md-3">
+        <h5>Quick Links</h5><br>
+        <ul class="list-unstyled">
+          <li><a href="miniproject.html">Home</a></li><br>
+          <li><a href="about.us.html">About Us</a></li><br>
+          <li><a href="#">Services</a></li><br>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+     <div class="col-md-3">
+    <h5>Contact Us</h5><br>
+    <ul class="list-unstyled">
+        <li>
+            <a href="mailto:jawadulbahar@gmail.com">
+                Email: <small><b><i>&nbsp;jawadulbahar@gmail.com</i></b></small>
+            </a>
+        </li><br>
+        <li>
+            <a href="tel:+923133998234">
+                Phone: <small><b><i>+92-3133998234</i></b></small>
+            </a>
+        </li><br>
+        <li>
+            <a href="https://www.google.com/maps?q=Plot+F,+79,+Phase+1+Defence+View+Housing+Society,+Karachi,+Karachi+City,+Sindh" target="_blank">
+                <i>Plot F, 79, Phase 1 Defence View Housing Society, Karachi, Karachi City, Sindh</i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+      <div class="col-md-3">
+        <h5 style="margin-left: 10px;">Follow Us</h5><br>
+        <div class="social-icons">
+          <a href="#"><i class="fa fa-facebook-f"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a><br><br>
+          <a href="https://wa.me/923133998234"><button style="height: 40px;" class="bont"><i class="fa fa-whatsapp" style="font-size:20px;color:white"> Message</i></button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+ <footer class="footer">
+  <div class="container">
+    <div class="row">
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container d-flex justify-content-between align-items-center">
+      <p class="mb-0">&copy; 2024 VIP Furniture. All rights reserved.</p>
+     
+      <!-- <div class="social-icons">
+        <a href="#"><i class="fa fa-facebook-f"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+      </div> -->
+
+    </div>
+  </div>
+</footer>
+</footer>
+<!-- End Footer -->
+
+
+<script>
+  // Get the button
+  var mybutton = document.getElementById("scrollTopBtn");
+
+  // When the user scrolls down 100px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  mybutton.onclick = function() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+</script>
+</i></body>
+</html>

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/WhatsApp Image 2024-06-25 at 3.05.35 PM.jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Oxford Sofa</title>
+    <style>
+        /* Start Header */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar-brand {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .me-2 {
+            border-radius: 20px;
+            border: 1px solid rgb(48, 48, 48);
+            width: 250px;
+        }
+        .navbar-brand img {
+            height: 50px;
+            width: 100px;
+            opacity: 0.7;
+        }
+        .navbar {
+            font-size: 15px;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            width: 100%;
+            opacity: 0.8;
+        }
+        .btn {
+            border-radius: 20px;
+            margin-left: 0;
+        }
+        @media (max-width: 992px) {
+            .navbar-brand {
+                position: static;
+                transform: none;
+                margin: auto;
+            }
+        }
+        .list {
+            text-decoration: none;
+            color: gray;
+            margin: 10px;
+        }
+        .list:hover {
+            color: black;
+        }
+        .dd-flex {
+            border-bottom: 1px solid gray;
+            height: 40px;
+        }
+        .dd-flex:hover {
+            border: 2px solid gray;
+            border-radius: 30px;
+            transition: 1s;
+        }
+        /* End Header */
+
+        /* Start Content */
+        .video {
+            position: relative;
+            width: 100%;
+            height: calc(100vh - 57px); /* Adjust height to fit within the viewport */
+            overflow: hidden;
+            margin-top: 57px;
+        }
+        .video video {
+            width: 100%;
+            height: 85%;
+            object-fit: cover;
+        }
+        .fa-star.checked {
+            color: orange;
+        }
+        .bttn {
+            width: 120px;
+            height: 30px;
+            border: none;
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+        }
+        .bttn:hover {
+            background-color: lightslategray;
+            border-radius: 30px;
+            transition: 1s ease-in-out;
+        }
+        .content {
+            padding: 20px;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        #scrollTopBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 20px; /* Place the button 20px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        font-size: 40px; /* Increase font size */
+        color: gray; /* Icon color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        }
+        #scrollTopBtn:hover{
+        color: #212529;
+        font-size: 55px;
+        transition: 0.9s;
+        }
+        /* End Content */
+        
+         /* Start Footer */  
+        .footer {
+        background-color: #343a40;
+        color: white;
+        padding: 40px 0;
+        width: 100%;
+        padding-bottom: 10px;
+        }
+        .footer a {
+        color: #adb5bd;
+        text-decoration: none;
+        }
+        .footer a:hover {
+        color: white;
+        text-decoration: none;
+        }
+        .footer .social-icons a {
+        margin: 10px;
+        margin-bottom: -5px;
+        }
+        .f-h{
+            margin-top: -3%;
+        }
+        .copy{
+            margin-top: 50px;
+        }
+        .footer-bottom {
+        background-color: #212529;
+        color: #adb5bd;
+        padding-bottom: 0px 0;
+        margin-top: 30px;
+        height: 29px;
+        }
+        .footer-bottom .social-icons a {
+        margin-left: 10px;
+        color: #adb5bd;
+        text-decoration: none;
+        }
+        .footer-bottom .social-icons a:hover {
+        color: white;
+        }
+        .bont{
+            width: 50%;
+            background-color: green;
+            border: none;
+            border-radius: 30px;
+        }
+        .bont:hover{
+            background-color: rgb(54, 227, 54);
+            transition: 1s;
+        }
+    /* End Footer */
+    </style>
+</head>
+<body><i>
+    <!-- Start Header -->
+    <nav class="navbar navbar-expand-lg bg-secondary-subtle text-black">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="miniproject.html"><b><i>O<sup>xford</sup> S<sub>ofa</sub></i></b></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-user-circle-o" style="font-size:25px; color:gray;"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="LoginPage.html"><b>Login / Register</b></a></li>
+                            </ul>
+                        </li>
+                        <a class="nav-link active" aria-current="page" href="miniproject.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Compare</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#jawad"><b>Single Sofas</b></a></li><hr>
+                            <li><a class="dropdown-item" href="#jawad1"><b>Two Seater</b></a></li><hr>
+                            <li><a class="dropdown-item" href="#jawad2"><b>Three Seater</b></a></li><hr>
+                            <li><a class="dropdown-item" href="#jawad3"><b>Corner Sofas</b></a></li>
+                        </ul> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle btn-primary" href="cart.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-cart-arrow-down" style="font-size:25px; color:gray;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="cart.html"><b>Add To Cart</b></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex dd-flex" role="search">
+                    <input class="form-control me-2 bg-transparent border-0" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn border-0" type="submit"><i class="fa fa-search" style="font-size:25px; margin-top: -1px; float: right;"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- End Header -->
+
+    <!-- Start Content -->
+    <div class="video">
+        <video autoplay muted loop>
+            <source src="img/videoplayback.webm" type="video/webm">
+        </video>
+    </div>
+    <div class="content text-center">
+        <h1 id="jawad">Single Sofas</h1><br>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card w-75 mx-auto">
+                    <img src="img/singlesofa1.webp" class="card-img-top" alt="Single Sofa">
+                    <div class="card-body">
+                        <h5 class="card-title">Sofa Cooper (Velvet Olive Green)</h5>
+                        <p class="card-text"><b>Design: </b>The Sofa Cooper features a plush velvet fabric in a luxurious olive green color, offering a chic and <br>sophisticated style.</p>
+                        <p><b>Material: </b> Upholstered in high-quality velvet, it provides a soft and sumptuous feel, adding a touch of elegance to any room.</p>
+                        <p><b>Comfort: </b> With its comfortable cushioning and supportive backrest, it ensures a relaxing and cozy seating experience.</p>
+                        <p><b>Style: </b> Ideal for modern, elegant living spaces, it exudes refinement and is perfect for those looking to add a touch of luxury to their home decor.</p>
+                        <p>Color: <b>Olive Green</b></p>
+                        <p><b>Rs.57,000</b></p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span><br><br>
+                        <button class="bttn card-text item-end">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card w-75 mx-auto">
+                    <img src="img/singlesofa9.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lodge Sofa (Bottle Green)</h5>
+                        <p class="card-text"><b>Design: </b>The Lodge Sofa boasts durable leather in a deep bottle green shade, presenting a rustic <br>and rugged charm.</p>
+                        <p><b>Material: </b>Made with high-quality leather, it combines practicality with a timeless, traditional look.</p>
+                        <p><b>Comfort: </b>Designed for comfort, it offers ample support and plush seating, ideal for cozy, country-style interiors.</p>
+                        <p><b>Style: </b>Perfect for those who appreciate a more rugged yet stylish aesthetic, it blends traditional design with high durability, making it a lasting addition to any home.</p>
+                        <p>Color: <b>Bottle Green</b></p>
+                        <p><b>Rs.65,000</b></p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span><br><br>
+                        <button class="bttn card-text item-end">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><hr><hr>
+      <div class="content text-center">
+        <h1 id="jawad1">Two Seater Sofas</h1><br>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card w-75 mx-auto">
+                    <img src="img/collection2.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                         <h5 class="card-title">Canton Sofa Two Seater</h5>
+                        <p class="card-text"><b>Design: </b>The Canton 2 Seater boasts a sleek and modern design with clean lines and minimalistic features. Its compact size makes it perfect for smaller spaces or cozy corners.</p>
+                        <p><b>Material: </b>Upholstered in high-quality fabric or leather, it provides a balance of comfort and durability, ideal for everyday use.</p>
+                        <p><b>Comfort: </b>Equipped with plush cushions and a supportive backrest, it ensures a comfortable seating experience, whether for lounging or socializing.</p>
+                        <p><b>Style: </b>Its elegant and understated look fits seamlessly with contemporary decor, offering a touch of sophistication to any room.</p>
+                        <p>Color: <b>Off-White</b></p>
+                        <p><b>Rs.995,000</b></p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span><br><br>
+                        <button class="bttn card-text item-end">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card w-75 mx-auto">
+                    <img src="img/collection3.avif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Swan Sofa Two Seater</h5>
+                        <p class="card-text"><b>Design: </b>The Swan Sofa features a distinctive, curvaceous silhouette that mimics the graceful shape of a swan, adding a unique and artistic flair to any space.</p>
+                        <p><b>Material: </b>Made from premium materials such as soft velvet or high-end leather, it combines luxury with comfort, making it a focal point in any room.</p>
+                        <p><b>Comfort: </b> Designed with ample cushioning and a generously padded seat, it provides exceptional comfort and support, ideal for relaxation and style.</p>
+                        <p><b>Style: </b>Its eye-catching design and elegant form make it a statement piece, suitable for modern and stylish interiors looking to make an impact.</p>
+                        <p>Color: <b>Blue</b></p>
+                        <p><b>Rs.555,000</b></p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span><br><br>
+                        <button class="bttn card-text item-end">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><hr><hr>
+    <div class="content text-center">
+        <h1 id="jawad2">Three Seater Sofas</h1><br>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card w-75 mx-auto">
+                    <img src="img/collection6.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                         <h5 class="card-title">Sirona Three Seater Sofa</h5>
+                        <p class="card-text"><b>Design: </b> The Sirona Sofa features a contemporary design with clean lines and a sleek silhouette, making it a stylish addition to any modern living room.</p>
+                        <p><b>Material: </b>Upholstered in premium fabric, it offers a soft and inviting texture while being durable and <br>easy to maintain.</p>
+                        <p><b>Comfort: </b>With its spacious seating area and plush cushions, it provides exceptional comfort for multiple users, perfect for family gatherings or entertaining guests.</p>
+                        <p><b>Style: </b>Ideal for those seeking a blend of elegance and practicality, the Sirona seamlessly fits into various decor styles, enhancing the overall aesthetic of the space.</p>
+                        <p>Color: <b>Golden</b></p>
+                        <p><b>Rs.835,000</b></p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span><br><br>
+                        <button class="bttn card-text item-end">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card w-75 mx-auto">
+                    <img src="img/collection4.avif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Marlet Sofa Three Seater Sofa</h5>
+                        <p class="card-text"><b>Design: </b>The Marlet Sofa is characterized by its classic design, featuring rolled arms and intricate detailing that exudes timeless charm.</p>
+                        <p><b>Material: </b>Constructed with high-quality leather or fabric options, it combines durability with a luxurious feel, catering to different style preferences.</p>
+                        <p><b>Comfort: </b>Known for its deep seating and supportive cushions, the Marlet offers superior comfort, making it a cozy retreat for relaxation.</p>
+                        <p><b>Style: </b>Perfect for traditional or transitional interiors, the Marlet Sofa adds a touch of sophistication and elegance, becoming a focal point in any room.</p>
+                        <p>Color: <b>Lights Gray</b></p>
+                        <p><b>Rs.331,000</b></p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span><br><br>
+                        <button class="bttn card-text item-end">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><hr><hr>
+     <div class="content text-center">
+        <h1 id="jawad3">Corner Sofas</h1><br>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card w-75 mx-auto">
+                    <img src="img/otto_modular.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                         <h5 class="card-title">Mastering Modernity Corner Sofa</h5>
+                        <p class="card-text"><b>Design: </b>The Mastering Modernity Corner Sofa boasts a sleek, contemporary design with clean lines and minimalist aesthetics, making it a standout piece in any modern living space.</p>
+                        <p><b>Material: </b>Crafted from high-quality materials such as premium fabric or leather, it offers both durability and a luxurious feel.</p>
+                        <p><b>Comfort: </b>Featuring deep seating and plush cushions, it ensures maximum comfort and relaxation for multiple users, making it ideal for social gatherings.</p>
+                        <p><b>Style: </b>Its versatile design allows it to seamlessly integrate into various decor styles, adding a touch of sophistication and modern elegance to your home.</p>
+                        <p>Color: <b>Dark Green</b></p>
+                        <p><b>Rs.650,000</b></p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span><br><br>
+                        <button class="bttn card-text item-end">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card w-75 mx-auto">
+                    <img src="img/cornersofa_515x515.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Scandinavian Corner Sofas</h5>
+                        <p class="card-text"><b>Design: </b>The Scandinavian Corner Sofa is characterized by its functional yet stylish design, with a focus on simplicity, natural elements, and clean lines.</p>
+                        <p><b>Material: </b>Typically made with sustainable materials like wood and natural fabrics, it embodies the essence of Scandinavian design with a blend of form and function.</p>
+                        <p><b>Comfort: </b>It offers a comfortable seating experience with firm yet cozy cushions, promoting a relaxed and inviting atmosphere.</p>
+                        <p><b>Style: </b> Perfect for those who appreciate minimalist and eco-friendly decor, the Scandinavian Corner Sofa adds a touch of Nordic charm and elegance to any living space.</p>
+                        <p>Color: <b>Off-White</b></p>
+                        <p><b>Rs.720,840</b></p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span><br><br>
+                        <button class="bttn card-text item-end">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div><a href="#" id="scrollTopBtn"><i class="fa fa-arrow-up"></i></a></div>
+    <hr><hr>
+<div class="text-center">
+    <p>Experience unparalleled comfort and style with our premium sofa collection, crafted to perfection for your ultimate relaxation. Transform your living space with our elegant sofas, where luxury meets functionality, designed to elevate your home decor. Indulge in the perfect blend of sophistication and comfort with our exquisite range of sofas, <br>tailored for modern living. Visit our website to explore more!</p>
+</div>
+<hr><hr>
+     <!-- End Content -->
+
+     <!-- Start Footer -->
+ <footer class="footer">
+  <div class="container">
+    <div class="f-h text-left text-white mb-5">
+            <h1><b><i>O<sup>xford</sup> S<sub>ofa</sub></i></b></h1>
+        </div>
+    <div class="row">
+      <div class="col-md-3">
+        
+        <h5>About Us</h5><br>
+        <p>Experience unparalleled comfort and style with our premium sofa collection, crafted to perfection for your ultimate relaxation our elegant sofas, where luxury meets functionality, designed to elevate your home decor.</p>
+      </div>
+      <div class="col-md-3">
+        <h5>Quick Links</h5><br>
+        <ul class="list-unstyled">
+          <li><a href="miniproject.html">Home</a></li><br>
+          <li><a href="about.us.html">About Us</a></li><br>
+          <li><a href="#">Services</a></li><br>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+     <div class="col-md-3">
+    <h5>Contact Us</h5><br>
+    <ul class="list-unstyled">
+        <li>
+            <a href="mailto:jawadulbahar@gmail.com">
+                Email: <small><b><i>&nbsp;jawadulbahar@gmail.com</i></b></small>
+            </a>
+        </li><br>
+        <li>
+            <a href="tel:+923133998234">
+                Phone: <small><b><i>+92-3133998234</i></b></small>
+            </a>
+        </li><br>
+        <li>
+            <a href="https://www.google.com/maps?q=Plot+F,+79,+Phase+1+Defence+View+Housing+Society,+Karachi,+Karachi+City,+Sindh" target="_blank">
+                <i>Plot F, 79, Phase 1 Defence View Housing Society, Karachi, Karachi City, Sindh</i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+      <div class="col-md-3">
+        <h5 style="margin-left: 10px;">Follow Us</h5><br>
+        <div class="social-icons">
+          <a href="#"><i class="fa fa-facebook-f"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a><br><br>
+          <a href="https://wa.me/923133998234"><button style="height: 40px;" class="bont"><i class="fa fa-whatsapp" style="font-size:20px;color:white"> Message</i></button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+ <footer class="footer">
+  <div class="container">
+    <div class="row">
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container d-flex justify-content-between align-items-center">
+      <p class="mb-0">&copy; 2024 VIP Furniture. All rights reserved.</p>
+     
+      <!-- <div class="social-icons">
+        <a href="#"><i class="fa fa-facebook-f"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+      </div> -->
+
+    </div>
+  </div>
+</footer>
+</footer>
+<!-- End Footer -->
+
+<script>
+  // Get the button
+  var mybutton = document.getElementById("scrollTopBtn");
+
+  // When the user scrolls down 100px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  mybutton.onclick = function() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+</script>
+</i></body>
+</html>
